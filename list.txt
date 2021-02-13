@@ -1,8 +1,19 @@
 # Spam Mail Relay Hosts and Subnets
 # Sometimes spammers are using entire subnets to send spam.
-# May contain false positives, or mail relays that you or your mailing users might want to receive.
+# May contain false positives, or mail relays that you or your mailing users might want to receive (Not my case :)
 # Saw drastic spam reduction by blocklisting and or high scoring mail from this IPs/Subnets.
-# Use with caution.
+# This list is maintained out of pure annoyance against spam mail.
+
+# Example SpamAssasin Rule:
+
+header RULE_NAME Received=~ /\[spammyIP\]/
+score RULE_NAME 99
+describe RULE_NAME Ban relay from serverIPaddr
+
+# Example pf.conf ban
+table <spammers> persist file "/etc/spammers"
+block quick from <spammers>
+
 45.67.233.5
 45.67.233.166
 45.67.234.5
