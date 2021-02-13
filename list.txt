@@ -9,6 +9,9 @@
 #score RULE_NAME 10
 #describe RULE_NAME Ban relay from serverIPaddr
 
+# Good SpamAssasin Article
+https://wiki.zimbra.com/wiki/Improving_Anti-spam_system
+
 # Example pf.conf ban (my favorite::)
 # table <spammers> persist file "/etc/spammers"
 # block quick from <spammers>
