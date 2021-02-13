@@ -10,7 +10,7 @@ header RULE_NAME Received=~ /\[spammyIP\]/
 score RULE_NAME 99
 describe RULE_NAME Ban relay from serverIPaddr
 
-# Example pf.conf ban
+# Example pf.conf ban (my favorite::)
 table <spammers> persist file "/etc/spammers"
 block quick from <spammers>
 
