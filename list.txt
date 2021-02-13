@@ -5,14 +5,13 @@
 # This list is maintained out of pure annoyance against spam mail.
 
 # Example SpamAssasin Rule:
-
-header RULE_NAME Received=~ /\[spammyIP\]/
-score RULE_NAME 99
-describe RULE_NAME Ban relay from serverIPaddr
+#header RULE_NAME Received=~ /\[spammyIP\]/
+#score RULE_NAME 10
+#describe RULE_NAME Ban relay from serverIPaddr
 
 # Example pf.conf ban (my favorite::)
-table <spammers> persist file "/etc/spammers"
-block quick from <spammers>
+# table <spammers> persist file "/etc/spammers"
+# block quick from <spammers>
 
 45.67.233.5
 45.67.233.166
