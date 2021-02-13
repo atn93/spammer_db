@@ -1,5 +1,5 @@
 # Spam Mail Relay Hosts and Subnets
-# Sometimes spammers are using entire subnets to send insolicited mail.
+# Sometimes spammers are using entire subnets to send spam.
 # May contain false positives, or mail relays that you or your mailing users might want to receive.
 # Saw drastic spam reduction by blocklisting and or high scoring mail from this IPs/Subnets.
 # Use with caution.
